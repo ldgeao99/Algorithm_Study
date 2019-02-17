@@ -38,6 +38,7 @@ KMP알고리즘                 O(n)
 보이어-무어 알고리즘        O(n)보다 적음 (최악의 경우 O(mn))
 '''
 
+# 고지식한 패턴 검색 알고리즘(Brute Force)
 def BruteForce(pattern, text):
     p_len = len(pattern)
     t_len = len(text)
