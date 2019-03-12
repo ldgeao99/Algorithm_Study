@@ -44,9 +44,7 @@ def pop():
 """
 
 
-# <push, pop 예시코드>
-
-
+# <push, pop 예시코드> #####################################################
 def push(item):
     s.append(item)
 
@@ -64,7 +62,7 @@ push(3)
 print("pop item =>", pop())
 print("pop item =>", pop())
 print("pop item =>", pop())
-
+########################################################################
 
 """
 <Stack 을 List 로 구현시 고려할 사항>
