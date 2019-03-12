@@ -8,8 +8,8 @@
 '''
 
 def binarySearch(arr, key):
-    start = 0
-    end = len(arr)-1
+    start = 0          # start element's index
+    end = len(arr)-1   # end   element's index
     count = 0
     while start <= end:
 
