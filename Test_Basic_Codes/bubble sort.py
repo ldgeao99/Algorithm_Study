@@ -11,7 +11,7 @@
 
 
 # 오름차순 정렬
-def bubble_sort(lst):
+def bubble_sort_ascending_order(lst):
     new_list = lst.copy()
 
     for i in range(len(new_list)-1):
@@ -21,8 +21,26 @@ def bubble_sort(lst):
     return new_list
 
 
+# 내림차순 정렬
+def bubble_sort_descending_order(lst):
+    new_list = lst.copy()
+
+    for i in range(len(new_list)-1):
+        for j in range(len(new_list)-1-i):
+            if new_list[j] < new_list[j+1]:
+                new_list[j], new_list[j+1] = new_list[j+1], new_list[j]
+    return new_list
+
+
 lst = [3, 2, 5, 1]
-print(lst)
-print(bubble_sort(lst))
+print(lst)               # [3, 2, 5, 1]
+print(bubble_sort_ascending_order(lst))  # [1, 2, 3, 5]
+print(bubble_sort_descending_order(lst))  # [1, 2, 3, 5]
+
+
+
+
+
+
 
 
